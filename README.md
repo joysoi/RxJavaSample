@@ -14,4 +14,8 @@
 * Added note body 
 
 ## 05/20/2022
+* Added test case for Observable of type Single 
+
+## 05/20/2022
 * Added test case for Observable of type Observable 
+
