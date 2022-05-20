@@ -9,3 +9,6 @@
 
 ## 05/20/2022
 * Re-adjusted BASE_URL
+
+## 05/20/2022
+* Added note body 
