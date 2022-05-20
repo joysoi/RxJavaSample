@@ -1,6 +1,6 @@
 package com.nikola.rxjavasample
 
-import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.core.*
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -24,4 +24,31 @@ class MainActivityUnitTest {
 
 
     }
+
+
+    @Test
+    fun testHelloWorldRxSingle(){
+        Single.just("Hello World").subscribe{ item->
+            println(item)
+       }
+
+
+    }
+     @Test
+    fun testHelloWorldRxObservable(){
+        Observable.just("Hello World").subscribe{ item->
+            println(item)
+        }
+
+
+    }
+    
+       @Test
+    fun testHelloWorldCompletable(){
+        Maybe.just("Hello World").subscribe{ item->
+            println(item)
+        }
+        Completable.complete()
+    }
+
 }
