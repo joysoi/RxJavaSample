@@ -2,6 +2,7 @@ package com.nikola.rxjavasample
 
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.core.Observable
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -26,12 +27,21 @@ class MainActivityUnitTest {
 
     }
 
+
     @Test
     fun testHelloWorldRxSingle(){
         Single.just("Hello World").subscribe{ item->
+       }
+
+
+    }
+     @Test
+    fun testHelloWorldRxSingle(){
+        Observable.just("Hello World").subscribe{ item->
             println(item)
         }
 
 
     }
+
 }
