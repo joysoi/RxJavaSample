@@ -31,12 +31,13 @@ class MainActivityUnitTest {
     @Test
     fun testHelloWorldRxSingle(){
         Single.just("Hello World").subscribe{ item->
+            println(item)
        }
 
 
     }
      @Test
-    fun testHelloWorldRxSingle(){
+    fun testHelloWorldRxObservable(){
         Observable.just("Hello World").subscribe{ item->
             println(item)
         }
