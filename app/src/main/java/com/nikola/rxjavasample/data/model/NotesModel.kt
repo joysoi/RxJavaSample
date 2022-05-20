@@ -34,7 +34,8 @@ data class UiNotesItem(
 ){
     override fun toString(): String {
         return "\n" +
-                "Note title $noteTitle"
+                "Note title $noteTitle" +
+                "Note body $noteBody"
     }
 }
 
