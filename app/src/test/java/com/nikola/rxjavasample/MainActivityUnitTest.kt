@@ -1,6 +1,7 @@
 package com.nikola.rxjavasample
 
 import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.core.Single
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -19,6 +20,15 @@ class MainActivityUnitTest {
     @Test
     fun testHelloWorldRx(){
         Flowable.just("Hello World").subscribe{ item->
+            println(item)
+        }
+
+
+    }
+
+    @Test
+    fun testHelloWorldRxSingle(){
+        Single.just("Hello World").subscribe{ item->
             println(item)
         }
 
