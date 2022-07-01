@@ -48,3 +48,9 @@
 
 # 07/01/2022
 * Text view added
+
+# 07/01/2022
+* Edit view added
+
+# 07/01/2022
+* Edit view added
